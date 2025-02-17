@@ -1,0 +1,128 @@
+/* === Service Form Container === */
+.service-container {
+    position: relative;
+    max-width: 550px;
+    margin: 30px auto;
+    background-color: #FFFDF8; /* Warm off-white */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+/* === Date & Time (Top-Right) === */
+.service-datetime {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5A5A5A; /* Dark gray */
+}
+
+.service-time {
+    color: #D67D3E; /* Warm brown-orange */
+    font-weight: 700;
+}
+
+/* === Heading === */
+.service-heading {
+    text-align: center;
+    color: #D67D3E;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* === Labels === */
+.service-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5A5A5A;
+    display: block;
+    margin-top: 12px;
+}
+
+/* === Input Fields === */
+.service-input,
+.service-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C0B8A9;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    margin-top: 5px;
+    background: #FDF9F3;
+    transition: 0.3s;
+}
+
+.service-input:focus,
+.service-select:focus {
+    border-color: #D67D3E;
+    box-shadow: 0px 0px 6px rgba(214, 125, 62, 0.4);
+}
+
+/* === Radio Button Group === */
+.service-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.service-radio {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #D67D3E;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.service-radio:checked {
+    background-color: #D67D3E;
+    border-color: #D67D3E;
+}
+
+.service-radio:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* === Submit Button === */
+.service-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #D67D3E;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.service-submit-btn:hover {
+    background-color: #B5612E;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+    .service-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}

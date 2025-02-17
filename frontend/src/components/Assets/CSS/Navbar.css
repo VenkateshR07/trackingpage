@@ -1,0 +1,49 @@
+/* Navbar.css */
+*{
+    text-decoration: none !important;
+}
+.navbar-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E0D5C0; /* Muted Sand */
+    padding: 12px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-search-input {
+    padding: 8px;
+    width: 220px;
+    border: 1px solid #C0B8A9; /* Subtle border */
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar-profile {
+    background-color: #D67D3E; /* Warm Brown-Orange */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navbar-profile:hover {
+    background-color: #B5612E; /* Darker shade on hover */
+}
+
+/* Hamburger Menu */
+.navbar-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #5A5A5A;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-hamburger {
+        display: block;
+    }
+}
