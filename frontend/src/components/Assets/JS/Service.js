@@ -57,7 +57,7 @@ const Service = () => {
 
       <form className="service-form" onSubmit={handleSubmit}>
         <h2 className="service-heading">Service Receipt</h2>
-
+       
         {/* Bill Number Field */}
         <label className="service-label">Bill Number:</label>
         <input type="text" name="billNumber" className="service-input" value={formData.billNumber} onChange={handleChange} />
@@ -75,7 +75,7 @@ const Service = () => {
         <input type="text" name="address" className="service-input" value={formData.address} onChange={handleChange} />
 
         <div className="service-radio-group">
-          <input type="radio" name="warranty" value="guarantee" className="service-radio" checked={formData.warranty === "guarantee"} onChange={handleChange} />
+          <input type="radio" name="guaranteeStatus" value="guarantee" className="service-radio" checked={formData.warranty === "guarantee"} onChange={handleChange} />
           <label className="service-radio-label">Guarantee</label>
 
           <input type="radio" name="warranty" value="non-guarantee" className="service-radio" checked={formData.warranty === "non-guarantee"} onChange={handleChange} />

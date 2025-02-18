@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ticketSchema = new mongoose.Schema({
         billNumber: { type: String, unique: true, required: true },
-        date: { type: Date, default: Date.now },
+        // date: { type: Date, default: Date.now },
         name: { type: String, required: true },
         cellNumber: { type: String, required: true },
         alternateNumber: { type: String },

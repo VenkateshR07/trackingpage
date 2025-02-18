@@ -10,13 +10,15 @@ export const serviceSlice = createSlice({
       cellNumber: "",
       alternateNumber: "",
       address: "",
-      warranty: "",
+      guaranteeStatus: "",
       problem: "",
       item: "",
       status: "",
       otherStatus: "",
-      datetime: { date: "", time: "" }, // Initialize datetime object
+      // date: { date: "", time: "" }, // Initialize datetime object
     },
+   
+
   },
   reducers: {
     updateForm: (state, action) => {
@@ -33,17 +35,17 @@ export const serviceSlice = createSlice({
     },
     resetForm: (state) => {
       state.formvalue = {
-        billNumber: "",  // Reset billNumber field
-        name: "",
-        cellNumber: "",
-        alternateNumber: "",
-        address: "",
-        warranty: "",
-        problem: "",
-        item: "",
-        status: "",
-        otherStatus: "",
-        datetime: { date: "", time: "" },
+        billNumber: "",  // Added billNumber field
+      name: "",
+      cellNumber: "",
+      alternateNumber: "",
+      address: "",
+      guaranteeStatus: "",
+      problem: "",
+      item: "",
+      status: "",
+      otherStatus: "",
+     
       };
 
 
