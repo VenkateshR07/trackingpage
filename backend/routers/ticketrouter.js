@@ -4,7 +4,7 @@ const { createtickentfun, getticketfun, editticketfun } = require("../controller
 
 const ticketRouter = express.Router()
 
-ticketRouter.post("/posttickets",createtickentfun)
+ticketRouter.post("/postticket",createtickentfun)
 ticketRouter.get("/getticket/:cellNumber",getticketfun)
 ticketRouter.put("/editticket/:id",editticketfun)
 
