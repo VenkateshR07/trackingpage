@@ -1,11 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import axios from 'axios';
 
 export const serviceSlice = createSlice({
   name: "Service",
   initialState: {
     formvalue: {
-      billNumber: "",  // Added billNumber field
+      billNumber: "",  
       name: "",
       cellNumber: "",
       alternateNumber: "",
@@ -15,40 +14,25 @@ export const serviceSlice = createSlice({
       item: "",
       status: "",
       otherStatus: "",
-      // date: { date: "", time: "" }, // Initialize datetime object
     },
-   
-
   },
   reducers: {
     updateForm: (state, action) => {
       state.formvalue = { ...state.formvalue, ...action.payload };
-
-      axios.post("http://localhost:4002/ticketapi/postticket",state.formvalue).then(()=>{
-          console.log("Ticket submitted successfully");
-  
-      }).catch(()=>{
-        console.log("Failed to submit ticket");
-      })
-
-
     },
     resetForm: (state) => {
       state.formvalue = {
-        billNumber: "",  // Added billNumber field
-      name: "",
-      cellNumber: "",
-      alternateNumber: "",
-      address: "",
-      guaranteeStatus: "",
-      problem: "",
-      item: "",
-      status: "",
-      otherStatus: "",
-     
+        billNumber: "",
+        name: "",
+        cellNumber: "",
+        alternateNumber: "",
+        address: "",
+        guaranteeStatus: "",
+        problem: "",
+        item: "",
+        status: "",
+        otherStatus: "",
       };
-
-
     },
   },
 });

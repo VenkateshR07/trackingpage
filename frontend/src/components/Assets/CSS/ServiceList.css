@@ -1,0 +1,68 @@
+.servicelist {
+    font-family: Arial, sans-serif;
+  }
+  
+  .billing-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 5px;
+  }
+  
+  .btn-image {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-create {
+    background-color: #6c5ce7;
+    color: white;
+  }
+  
+  .billing-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .billing-table th,
+  .billing-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .billing-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-view {
+    background-color: #6a5acd;
+    color: white;
+  }
+  
+  .btn-edit {
+    background-color: #ffa502;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #ff4757;
+    color: white;
+  }
+  
