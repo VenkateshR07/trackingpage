@@ -5,14 +5,14 @@
 .sidebar-container {
     width: 250px;
     height: 100vh;
-    background-color: #F0EAD6; /* Beige */
+    background-color: white; /* Beige */
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-title {
-    color: #D67D3E; /* Accent color */
+    color: #f09ada; /* Accent color */
     text-align: center;
     font-size: 22px;
     margin-bottom: 20px;
@@ -25,6 +25,7 @@
 
 .sidebar-list {
     padding: 0;
+    text-decoration: none !important;
 }
 
 .sidebar-item {
@@ -35,11 +36,15 @@
     transition: background 0.3s;
     border-radius: 6px;
     text-decoration: none !important;
+    
 }
 
 .sidebar-item:hover {
     background-color: #D67D3E; /* Accent color */
     color: white;
+}
+.sidebar-close-btn{
+    display: none;
 }
 
 /* Mobile Sidebar */

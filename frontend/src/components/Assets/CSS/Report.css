@@ -1,0 +1,70 @@
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Service Container */
+  .service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Service Card */
+  .service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Service Content */
+  .service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Icon Box */
+  .icon-box {
+    background: #B5612E;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  

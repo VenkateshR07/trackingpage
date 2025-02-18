@@ -3,6 +3,7 @@ const dotenv = require("dotenv")
 const connetDb = require("./config/mongoose")
 const ticketRouter = require("./routers/ticketrouter")
 const loginRouter = require("./routers/loginroute")
+const cors = require("cors")
 
 
 
@@ -13,6 +14,7 @@ connetDb()
 
 // middelware
 app.use(express.json())
+app.use(cors())
 
 
 // apiendpoint
